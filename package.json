@@ -1,0 +1,29 @@
+{
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "description": "Barbershop-adaptive website",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "css-mqpacker": "^6.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "node-normalize-scss": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp build && gulp serve"
+  },
+  "author": "Max",
+  "license": "ISC"
+}
