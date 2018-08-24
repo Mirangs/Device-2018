@@ -25,5 +25,8 @@
     "start": "gulp build && gulp serve"
   },
   "author": "Max",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.4.0"
+  }
 }
