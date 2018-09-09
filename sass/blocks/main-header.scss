@@ -1,0 +1,26 @@
+.main-header {
+  @include container-fixed();
+  background-color: #f7e296;
+
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: 300px;
+}
+
+.main-header .logo {
+  display: block;
+  width: 164px;
+  height: 36px;
+  margin-top: -57px;
+}
+
+.main-header .logo:hover {
+  opacity: 0.6;
+}
+
+.main-header .logo:active {
+  opacity: 0.3;
+}

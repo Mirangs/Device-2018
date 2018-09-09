@@ -4,50 +4,35 @@
   <meta charset="UTF-8">
   <title>Магазин электроники "Нёрдс"</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
 
-    <div class="logo">
+    <a class="logo">
       <img src="img/logo.png" alt="Логотип Нёрдса" width="164" height="36">
-    </div>
+    </a>
 
     <div class="user-items">
-      <input type="search" name="main-search">
+      <div class="search">
+        <input type="search" class="user-items__search-field" name="main-search" placeholder="Поиск по сайту">
+        <button class="user-items__search-btn user-items__search-btn--disabled">Найти</button>
+      </div>
       <ul class="user-items__list">
-        <li class="user-items__item">
+        <li class="user-items__item user-items__item--enter">
           <a href="#">Войти</a>
         </li>
-        <li class="user-items__item">
+        <li class="user-items__item user-items__item--compare">
           <a href="#">Сравнить</a>
         </li>
-        <li class="user-items__item">
+        <li class="user-items__item user-items__item--cart">
           <a href="#">Корзина</a>
         </li>
       </ul>
     </div>
 
     <nav class="main-nav">
-      <ul class="catalog">
-        <li class="catalog__item">
-          <a href="#">Виртуальная реальность</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Моноподы для селфи</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Экшн-камеры</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Фитнес-браслеты</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Умные часы</a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
+      <button type="button" class="catalog__open">Каталог товаров</button>
 
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -59,6 +44,33 @@
         <li class="main-nav__item">
           <a href="#">Контакты</a>
         </li>
+      </ul>
+
+      <ul class="catalog__list catalog__list--closed">
+        <div class="left-column">
+          <li class="catalog__item">
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">Экшн-камеры</a>
+          </li>
+        </div>
+        <div class="center-column">
+          <li class="catalog__item">
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">Умные часы</a>
+          </li>
+        </div>
+        <div class="right-column">
+          <li class="catalog__item">
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </div>
       </ul>
 
     </nav>
@@ -301,6 +313,12 @@
         </li>
       </ul>
 
+    </div>
+
+    <p class="phone">Тел. +7(495) 495-95-95</p>
+
+    <div class="copyright">
+      <img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35">
     </div>
   </footer>
 
