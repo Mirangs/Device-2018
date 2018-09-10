@@ -1,0 +1,165 @@
+.slider-features {
+  position: relative;
+  margin-top: -110px;
+  margin-bottom: 105px;
+
+  display: flex;
+  padding-right: 60px;
+
+
+  .slide {
+    display: none;
+    position: relative;
+
+    padding-left: 600px;
+    padding-bottom: 20px;
+
+    z-index: 0;
+
+    transition: background-image 0.5s ease;
+
+    &:first-child .slide__description {
+      padding-right: 20px;
+    }
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 7px;
+      background-color: #ffffff;
+
+      position: absolute;
+      top: 32px;
+    }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    font-family: Gilroy Extra Bold, Arial, sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    color: #ffffff;
+  }
+  }
+
+  .slide__title {
+    font-family: Gilroy Extra Bold, Arial, sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    color: #000000;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 79px;
+    margin-bottom: 20px;
+  }
+
+  .slide__description {
+    padding: 0;
+    margin: 0;
+    padding-right: 50px;
+    margin-bottom: 40px;
+  }
+
+  .stats {
+    padding: 0;
+    margin: 0;
+    margin-top: 55px;
+
+    border-collapse: collapse;
+
+    .values {
+      font-family: Gilroy Light, Arial, sans-serif;
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    .headers {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    td {
+      padding-top: 5px;
+      padding-right: 80px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 150px;
+  right: 65px;
+  z-index: 20;
+
+  font-size: 0;
+
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  margin-right: 20px;
+
+  vertical-align: top;
+
+  background-image: url("../../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-features label[for="btn-1"],
+#btn-2:checked ~ .slider-features label[for="btn-2"],
+#btn-3:checked ~ .slider-features label[for="btn-3"] {
+  background-image: url("../../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.5s ease;
+}
+
+#btn-1:checked ~ .slider-features #features__slide-1,
+#btn-2:checked ~ .slider-features #features__slide-2,
+#btn-3:checked ~ .slider-features #features__slide-3 {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+#btn-1:checked ~ .slider-features #features__slide-1 {
+  background-image: url("../../img/slider-1.png");
+  background-position: 90px 50%;
+
+  &::after {
+    content: "01";
+  }
+}
+
+#btn-2:checked ~ .slider-features #features__slide-2 {
+  background-image: url("../../img/slider-2.png");
+  background-position: 115px 0;
+
+  &::after {
+    content: "02";
+  }
+}
+
+#btn-3:checked ~ .slider-features #features__slide-3 {
+  background-image: url("../../img/slider-3.png");
+  background-position: 30px 50%;
+
+  &::after {
+    content: "03";
+    top: -5px;
+  }
+}
