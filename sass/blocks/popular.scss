@@ -1,0 +1,80 @@
+.popular {
+  font-family: Gilroy Extra Bold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+
+  margin-bottom: 80px;
+
+  .popular__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popular__item {
+    width: 160px;
+
+    position: relative;
+
+    a {
+      display: block;
+      padding-top: 200px;
+      color: #000000;
+      text-decoration: none;
+    }
+
+      &:hover::before {
+        background-color: #f0c52e;
+      }
+
+      &:active,
+      &:active::before {
+        opacity: 0.3;
+      }
+
+    &::before {
+      content: "";
+      width: 160px;
+      height: 160px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      transition: background-color 0.5s ease;
+
+      background-color: #f7e296;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &.virtual::before {
+      background-image: url("../../img/popular-1.svg");
+    }
+
+    &.selfie::before {
+      background-image: url("../../img/popular-2.svg");
+    }
+
+    &.action::before {
+      background-image: url("../../img/popular-3.svg");
+    }
+
+    &.fitness::before {
+      background-image: url("../../img/popular-4.svg");
+    }
+
+    &.smart::before {
+      background-image: url("../../img/popular-5.svg");
+    }
+
+    &.quadro::before {
+      background-image: url("../../img/popular-6.svg");
+    }
+  }
+}
