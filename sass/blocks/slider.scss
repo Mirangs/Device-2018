@@ -5,7 +5,6 @@
 
   display: flex;
 
-
   .slide {
     display: none;
     position: relative;
@@ -45,6 +44,7 @@
   }
 
   .slide__title {
+    position: relative;
     font-family: Gilroy Extra Bold, Arial, sans-serif;
     font-size: 47px;
     line-height: 56px;

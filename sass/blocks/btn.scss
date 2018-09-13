@@ -8,6 +8,9 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #000000;
+  background-color: transparent;
+  border: none;
+  outline-color: #f0c52e;
 
   padding: 13px 50px 10px 50px;
 
@@ -28,6 +31,11 @@
   }
 
   &:hover::before {
+    height: 100%;
+    top: 0;
+  }
+
+  &:focus::before {
     height: 100%;
     top: 0;
   }

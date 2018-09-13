@@ -35,6 +35,11 @@
   }
 
   .map {
+    padding: 0;
+    margin: 0;
     margin-bottom: 65px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 }

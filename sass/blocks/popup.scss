@@ -1,0 +1,148 @@
+.write-us-popup {
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  width: 960px;
+  top: 150px;
+  left: 350px;
+
+  z-index: 100;
+
+  font-family: Gilroy Extra Bold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+
+  padding: 100px;
+  padding-bottom: 80px;
+
+  box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.2);
+
+  animation-name: bounce;
+  animation-duration: 0.6s;
+
+  .write-us-popup__layout {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    margin: 0;
+    padding: 0;
+
+    padding: 17px;
+    opacity: 0.5;
+
+    box-sizing: border-box;
+    border: none;
+    background-color: #eaeaea;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 3px solid #f7e296;
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+  input[name="name"] {
+    width: 360px;
+  }
+
+  input[name="email"] {
+    width: 360px;
+  }
+
+  textarea[name="letter"] {
+    width: 100%;
+    resize: none;
+  }
+
+  .btn {
+    margin-top: 45px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  font-size: 0;
+  border: none;
+  opacity: 0.5;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-image: url("../../img/modal-close.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.map-popup {
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  width: 960px;
+  top: 150px;
+  left: 350px;
+
+  z-index: 100;
+
+  font-family: Gilroy Extra Bold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.2);
+  animation-name: bounce;
+  animation-duration: 0.6s;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% {transform: translateY(-10px); }
+  100% {transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
