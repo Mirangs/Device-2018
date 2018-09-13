@@ -1,0 +1,7 @@
+.index-columns {
+  @include container-fixed();
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}

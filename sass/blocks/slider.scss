@@ -1,10 +1,9 @@
 .slider-features {
   position: relative;
   margin-top: -110px;
-  margin-bottom: 105px;
+  margin-bottom: 95px;
 
   display: flex;
-  padding-right: 60px;
 
 
   .slide {
@@ -114,7 +113,7 @@
 
   vertical-align: top;
 
-  background-image: url("../../img/radio-off.svg");
+  background-image: url("../../img/slider-button-empty.svg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -123,7 +122,7 @@
 #btn-1:checked ~ .slider-features label[for="btn-1"],
 #btn-2:checked ~ .slider-features label[for="btn-2"],
 #btn-3:checked ~ .slider-features label[for="btn-3"] {
-  background-image: url("../../img/radio-on.svg");
+  background-image: url("../../img/slider-button.svg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 0.5s ease;
@@ -142,6 +141,8 @@
 
   &::after {
     content: "01";
+    right: 50px;
+    top: -15px;
   }
 }
 
@@ -151,6 +152,8 @@
 
   &::after {
     content: "02";
+    right: 50px;
+    top: -15px;
   }
 }
 
@@ -160,6 +163,7 @@
 
   &::after {
     content: "03";
+    right: 50px;
     top: -5px;
   }
 }

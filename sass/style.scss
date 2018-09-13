@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "scaffolding.scss";
 @import "fonts.scss";
+@import "layout.scss";
 
 @import "blocks/main-header.scss";
 @import "blocks/user-items.scss";
@@ -9,3 +10,8 @@
 @import "blocks/slider.scss";
 @import "blocks/btn.scss";
 @import "blocks/popular.scss";
+@import "blocks/services-slider.scss";
+@import "blocks/companies.scss";
+@import "blocks/about-us.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-footer.scss";

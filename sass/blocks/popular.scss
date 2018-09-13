@@ -4,7 +4,7 @@
   line-height: 24px;
   color: #000000;
 
-  margin-bottom: 80px;
+  margin-bottom: 185px;
 
   .popular__list {
     margin: 0;
@@ -22,7 +22,7 @@
 
     a {
       display: block;
-      padding-top: 200px;
+      padding-top: 190px;
       color: #000000;
       text-decoration: none;
     }
@@ -59,6 +59,7 @@
 
     &.selfie::before {
       background-image: url("../../img/popular-2.svg");
+      background-position: 50% 100%;
     }
 
     &.action::before {

@@ -1,0 +1,53 @@
+.companies {
+  @include container-fixed();
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+
+    &:first-child {
+      background-image: url("../../img/company-1.png");
+
+       &:hover {
+        background-image: url("../../img/company-1-hvr.png");
+      }
+    }
+    &:nth-child(2) {
+      background-image: url("../../img/company-2.png");
+
+       &:hover {
+        background-image: url("../../img/company-2-hvr.png");
+      }
+    }
+    &:nth-child(3) {
+      background-image: url("../../img/company-3.png");
+
+      &:hover {
+        background-image: url("../../img/company-3-hvr.png");
+      }
+    }
+    &:nth-child(4) {
+      background-image: url("../../img/company-4.png");
+
+       &:hover {
+        background-image: url("../../img/company-4-hvr.png");
+      }
+    }
+  }
+
+  &__item a {
+      display: block;
+      font-size: 0;
+      width: 260px;
+      height: 100px;
+    }
+}

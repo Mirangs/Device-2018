@@ -1,0 +1,102 @@
+.services-slider {
+
+  &__wrapper {
+    background-color: #e5e5e5;
+    margin-bottom: 95px;
+  }
+
+  @include container-fixed();
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+
+  .slide {
+    display: none;
+
+    flex-grow: 1;
+
+    position: relative;
+
+    padding-right: 300px;
+    padding-bottom: 105px;
+    padding-top: 10px;
+
+    top: -40px;
+  }
+
+  &__title {
+    font-family: Gilroy Extra Bold, Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .services-slider__controls {
+    position: relative;
+    top: -25px;
+    width: 280px;
+    z-index: 1;
+    margin-right: 120px;
+
+    label {
+      display: block;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+      margin-right: 120px;
+      text-align: left;
+    }
+
+    &::after {
+      content: "";
+      width: 7px;
+      height: 110%;
+      background-color: #000000;
+      position: absolute;
+      top: -75px;
+      right: 0;
+    }
+  }
+}
+
+#services-btn-1:checked ~ .services-slider #services__slide-1,
+#services-btn-2:checked ~ .services-slider #services__slide-2,
+#services-btn-3:checked ~ .services-slider #services__slide-3 {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+#services-btn-1:checked ~ .services-slider label[for="services-btn-1"],
+#services-btn-2:checked ~ .services-slider label[for="services-btn-2"],
+#services-btn-3:checked ~ .services-slider label[for="services-btn-3"] {
+  background-color: #000000;
+  color: #f7e184;
+  margin-right: 0;
+
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#services-btn-1:checked ~ .services-slider #services__slide-1 {
+  background-image: url("../../img/delivery.svg");
+  background-position: 90% 25px;
+}
+
+#services-btn-2:checked ~ .services-slider #services__slide-2 {
+  background-image: url("../../img/warranty.svg");
+  background-position: 95% 0;
+}
+
+#services-btn-3:checked ~ .services-slider #services__slide-3 {
+  background-image: url("../../img/credit.svg");
+  background-position: 95% 0;
+}

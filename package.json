@@ -27,6 +27,6 @@
   "author": "Max",
   "license": "ISC",
   "dependencies": {
-    "npm": "^6.4.0"
+    "npm": "^6.4.1"
   }
 }

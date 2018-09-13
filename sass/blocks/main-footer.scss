@@ -1,0 +1,210 @@
+.main-footer {
+  font-style: Open Sans Light, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #464646;
+
+  &__wrapper {
+    @include container-fixed();
+
+    position: relative;
+
+    padding-top: 63px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      bottom: 75px;
+      background-color: #ffc600;
+    }
+  }
+
+  .footer-logo {
+    margin-bottom: 22px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-bottom: 65px;
+
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      display: block;
+      font-family: Gilroy Extra Bold, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 3px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .social-btn {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin: 0 auto;
+
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+
+    .social-icon a:hover {
+      opacity: 1;
+    }
+
+    .social-icon a:active {
+      opacity: 0.1;
+    }
+
+    .social-icon__fb a {
+      background-image: url("../../img/fb.svg");
+      background-repeat: no-repeat;
+    }
+
+    .social-icon__in a {
+      background-image: url("../../img/in.svg");
+      background-repeat: no-repeat;
+    }
+
+    .social-icon__twit a {
+      background-image: url("../../img/twitter.svg");
+      background-repeat: no-repeat;
+    }
+
+    a {
+      display: block;
+      width: 32px;
+      height: 32px;
+      font-size: 0;
+      opacity: 0.3;
+    }
+  }
+
+  &__user-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 35px;
+
+    display: flex;
+
+    padding-left: 35px;
+
+    a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  &__user-item {
+    padding-left: 25px;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    fill: #ffc600;
+
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--enter {
+      background-image: url("../../img/footer-user.svg");
+    }
+
+    &--compare {
+      background-image: url("../../img/footer-compare.svg");
+    }
+
+    &--cart {
+      background-image: url("../../img/footer-cart.svg");
+    }
+  }
+
+  .phone {
+    margin: 0;
+    text-align: right;
+  }
+
+  .copyright {
+    position: relative;
+    width: 27px;
+    height: 35px;
+    margin-top: auto;
+    margin-left: auto;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .column-left {
+    box-sizing: border-box;
+    width: 360px;
+    padding-right: 100px;
+  }
+
+  .column-center {
+    box-sizing: border-box;
+    width: 440px;
+    padding-top: 72px;
+  }
+
+  .column-right {
+    position: relative;
+    box-sizing: border-box;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
