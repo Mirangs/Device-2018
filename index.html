@@ -47,30 +47,32 @@
       </ul>
 
       <ul class="catalog__list catalog__list--closed">
-        <div class="column">
-          <li class="catalog__item">
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <li class="catalog__item">
-            <a href="#">Моноподы для селфи</a>
-          </li>
-          <li class="catalog__item">
-            <a href="#">Экшн-камеры</a>
-          </li>
-        </div>
-        <div class="column">
-          <li class="catalog__item">
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog__item">
-            <a href="#">Умные часы</a>
-          </li>
-        </div>
-        <div class="column">
-          <li class="catalog__item">
-            <a href="#">Квадрокоптеры</a>
-          </li>
-        </div>
+        <li>
+          <ul class="column">
+            <li class="catalog__item">
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="column">
+            <li class="catalog__item">
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#">Умные часы</a>
+            </li>
+          </ul>
+        </li>
+            <li class="catalog__item">
+              <a href="#">Квадрокоптеры</a>
+            </li>
       </ul>
 
     </nav>
@@ -98,9 +100,11 @@
             </tbody>
 
             <tfoot class="headers">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+              <tr>
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
             </tfoot>
 
           </table>
@@ -120,7 +124,9 @@
           </tbody>
 
           <tfoot class="headers">
-            <td>Без подзарядки</td>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
           </tfoot>
 
         </table>
@@ -141,8 +147,10 @@
           </tbody>
 
           <tfoot class="headers">
-            <td>Дальность полета</td>
-            <td>Радиус поражения</td>
+            <tr>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
           </tfoot>
 
         </table>
@@ -340,7 +348,7 @@
 
   <section class="map-popup map-popup--closed">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716359357!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1536856068990" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716359357!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1536856068990" width="960" height="560" style="border-width:1px; border: 0" allowfullscreen></iframe>
     <p class="no-js"><img src="img/map-big.jpg" alt="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург" width="960" height="560"></p>
     <button type="button" class="modal-close">Закрыть</button>
   </section>
